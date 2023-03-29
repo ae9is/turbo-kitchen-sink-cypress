@@ -7,7 +7,11 @@
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
     "deploy": "vercel deploy dist --team=turborepo --confirm",
     "dev": "vite --host 0.0.0.0 --port 3001 --clearScreen false",
-    "lint": "tsc --noEmit && eslint \"src/**/*.ts*\""
+    "lint": "tsc --noEmit && eslint \"src/**/*.ts*\"",
+    "test": "start-server-and-test dev 3001 cypress:run",
+    "test:open": "start-server-and-test dev 3001 cypress:open",
+    "cypress:run": "cypress run",
+    "cypress:open": "cypress open"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -18,8 +22,10 @@
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@vitejs/plugin-react": "^2.1.0",
+    "cypress": "^12.9.0",
     "eslint": "^7.32.0",
     "eslint-config-custom": "workspace:*",
+    "start-server-and-test": "^2.0.0",
     "tsconfig": "workspace:*",
     "typescript": "^4.8.3",
     "vite": "^3.1.0"

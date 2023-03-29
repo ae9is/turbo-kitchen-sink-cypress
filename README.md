@@ -1,3 +1,16 @@
+# Note
+
+Repo to test Turborepo with Cypress.
+
+Basic Cypress e2e and component tests have been added to the admin app.
+
+Cypress open works as intended: `turbo test:open`
+
+Cypress headless mode does not work and hangs for both e2e and component testing: `turbo test`
+
+---
+---
+
 # Turborepo kitchen sink starter
 
 This is an official starter Turborepo with multiple meta-frameworks all working in harmony and sharing packages.
