@@ -8,6 +8,8 @@ Cypress open works as intended: `turbo test:open`
 
 Cypress headless mode does not work and hangs for both e2e and component testing: `turbo test`
 
+EDIT: Wasn't able to replicate in Docker environment. (I.e. `cypress run` via pnpm + Turbo works inside the Docker environment.)
+
 ---
 ---
 
