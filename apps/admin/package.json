@@ -8,7 +8,8 @@
     "deploy": "vercel deploy dist --team=turborepo --confirm",
     "dev": "vite --host 0.0.0.0 --port 3001 --clearScreen false",
     "lint": "tsc --noEmit && eslint \"src/**/*.ts*\"",
-    "test": "start-server-and-test dev 3001 cypress:run",
+    "test": "DEBUG=cypress:* start-server-and-test dev 3001 cypress:run",
+    "test:run": "start-server-and-test dev 3001 cypress:run",
     "test:open": "start-server-and-test dev 3001 cypress:open",
     "cypress:run": "cypress run",
     "cypress:open": "cypress open"
